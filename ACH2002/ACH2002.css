@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.finale{
+    background-color: white;
+    padding:1vw;
+}
+button {
+    background-color: transparent; /* Cor de fundo do botão */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius:100%;
+    border-color: transparent;
+    font-size: 18px; /* Tamanho da fonte do botão */
+    border-style: solid;
+    cursor: pointer; /* Mude o cursor para uma mão ao passar sobre o botão */
+    transition: transform 0.3s, background-color 0.3s, color 0.3s; /* Smooth transitions */
+    max-zoom: 100%;
+}
+button:hover{
+    color: #ffffff; /* Text color on hover */
+    transform: scale(1.05); /* Slight scale-up on hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Drop shadow on hover */
+}
+.texto-impressao{
+    color:white;
+}
+.centraliza-botao{
+    text-align: center;
+    padding-bottom:4vh;
+}
+.imagem_impressao{
+    width:6vw;
+    height: 10vh;
+}
+#observacao{
+    margin-top:3vh;
+}
+#livros{
+    margin-left:10vw;
+}
+#atendimentos{
+    margin-left:20vw;
+}
+#extras{
+    margin-left:30vw;
+}
+#menuBotao{
+    color: white;
+    border-radius: 3px;
+}
+ul {
+    list-style-type: none; /* Remove as "pintinhas" das listas não ordenadas */
+}
+.menu-opcoes {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    background-color: #333; /* Cor de fundo do menu */
+    max-height: 200px; /* Altura máxima do menu com rolagem */
+    overflow-y: auto; /* Habilitar a rolagem vertical quando necessário */
+    border: 1px solid #ccc; /* Borda do menu */
+}
+ul{
+    margin-right:2vw;
+    margin-top:10px;
+    margin-bottom:20px;
+    text-align:left;
+    align-items: left;
+}
+.menu-opcoes li{
+    margin-right: 0 !important;
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
+    z-index: 100;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr)); /* Divide em colunas de pelo menos 300px */
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-gap: 20px; /* Espaço entre os itens */
+    margin-bottom:5vh;
+}
+
+/* Estilos para os itens */
+.content-item {
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Alinhar à esquerda em telas menores */
+p{
+    font-family: 'Inter', sans-serif;
+}
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.nav-links li {
+    margin-right: 10px;
+}
+#menu {
+    display: none;
+  }
+#menu-button{
+    color:white;
+}
+@keyframes menu-item-animation {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.nav-item {
+    animation: menu-item-animation 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+@media (max-width: 768px) {
+    .imagem_impressao{
+        width:6vw;
+        height: 5vh;
+    }
+    ul a{
+        font-size: 16px;
+    }
+    h2 {
+        font-size: 16px; /* Tamanho da fonte do título */
+        margin-bottom: 20px; /* Espaçamento inferior para o texto */
+    }
+    .navbar {
+        flex-direction: row; /* Keep elements side by side */
+    }
+
+    .nav-links ul {
+        flex-direction: column; /* Keep navigation links side by side */
+    }
+
+    .nav-links li {
+        margin-right: 20px; /* Add spacing between links */
+    }
+
+    .logo img {
+        max-width: 100%; /* Reduce the size of the logo */
+    }
+    
+    /* Add more adjustments as needed */
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+.nav-item:hover {
+    color: orange; /* Text color on hover */
+}
+.nav-item{
+    transition: color 1s;
+}
+/* Style the selected menu item */
+.nav-item.selected {
+    text-decoration: underline; /* Underline the selected item */
+    text-decoration-color:#ebd93c; /* Set underline color */
+}
+.logo img {
+    width: 20%;
+    height: 20%;
+}
+
+/* Estilos para o footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    justify-content: flex-end;
+}
+
+/* Estilos para o logo no footer */
+.footer-logo img {
+    width: 15%;
+    height: 10%;
+}
+.footer-right {
+    display: flex; /* Use flexbox para alinhar as imagens à direita */
+    justify-content: flex-end; /* Alinhe as imagens no extremo direito */
+    align-items: center;
+}
+
+.footer-right img {
+    width: 20%; /* Ajuste a largura conforme necessário */
+    height: 20%;
+}
+.footer{
+    max-width: 100vw;
+}
+h2 {
+    font-size: 32px; /* Tamanho da fonte do título */
+    margin-bottom: 20px; /* Espaçamento inferior para o texto */
+}
+
+.h1{
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-size: 20px; /* Font size 64 */
+    color:#fff;
+}
+.texto-centro{ /* Use Roboto font */
+    text-align: center;
+    padding: 20px;
+    color:white;
+}
+
+body {
+    font-family: 'Roboto Light', sans-serif;
+    background-color: gray;
+}
+
+.texto-centro p{
+    font-family: 'Roboto Light', sans-serif; /* Use Roboto font */
+    font-size: 18px; /* Font size 64 */
+    color:#fff;
+}
+.texto-header {
+    font-family: 'Roboto Light', sans-serif; /* Use Roboto font */
+    font-size: 18px; /* Font size 64 */
+    color:#fff;
+}
+
+@media (max-width: 300%) {
+    /* Define styles for elements when zoom is beyond 300% */
+    body {
+        flex-direction: column; /* Make elements stack vertically */
+    }
+
+}
+
+.footer-logo img{
+    width: 20%;
+    height: 20%;
+}
+@media screen and (max-width: 768px) {
+    .texto-header,a,p,footer {
+        font-size: 2vw; /* Adjust the value as needed */
+    }
+    .logo img{
+        height: 6vh;
+        width: 20vw; 
+    }
+    .footer-right img{
+        height: 6vh;
+        width: 20vw; 
+    }
+}
+
+@media (max-width:768px){
+    h3{
+        font-size:2.4vh;
+    }
+}
+
+#outros{
+background-color: white;
+}
+#outros p,a,h3,b{
+    margin-left: 1vw;
+}
+.divisao{
+    background-color:#333;
+    padding:2vh;
+}
