@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale:3.0">
+    <title>ACH2002 - 2º Semestre de 2023</title>
+    <link rel="shortcut icon" href="http://each.uspnet.usp.br/novosite/wp-content/uploads/2015/09/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="ACH2002.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    </head>
+    
+    <body>
+        <header class="navbar">
+            <div class="menu">
+                <button id="menuBotao">Lista de Links</button>
+                <div id="menuOpcoes" class="menu-opcoes">
+                    <ul>
+                        <li><a href="#" id="linksDeConteudo">Links de Conteúdo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="http://www5.each.usp.br/"><img src="Imagens\seu-logo.png" alt="Logo da EACH "></a>
+            </div>
+            <!-- Links de Navegação -->
+            <button id="menu-button">&#9776; Menu</button>
+            <nav class="nav-links">
+                <div id="menu">
+                    <ul>
+                        <li><a class="nav-item" href="#cronograma">Programação</a></li>
+                        <li><a class="nav-item" href="#livros">Livros</a></li>
+                        <li><a class="nav-item" href="#atendimentos">Atendimentos</a></li>
+                        <li><a class="nav-item" href="#plantao">Plantão+</a></li>
+                    </ul>
+                  </div>
+            </nav>
+        </header>
+        <div class="texto-centro">
+            <p>Disciplina: ACH2002 - Introdução à Análise de Algoritmos<br>2º Semestre de 2023</p>
+            <p>Prof. Dr. Luciano Antonio Digiampietri</p>
+        </div>
+        <div id ="cronograma">
+        <h2 class ="texto-centro">Programação Preliminar da Disciplina</h2>
+        <div class="content-grid">
+            <!-- Conteúdo de cada dia -->
+            <div class="content-item">
+            <p>[08/08/2023] Apresentação da Disciplina <a href="https://www.each.usp.br/digiampietri/ACH2002/aula01.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+            <p>[10/08/2023] Custo de um Algoritmo e Complexidade <a href="https://www.each.usp.br/digiampietri/ACH2002/aula02.pdf">[pdf]</a> <a href="aula02.c">[c]</a>
+            </div>
+            <div class="content-item">
+                <p>[15/08/2023] Análise Assintótica de Algoritmos (parte I) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula03.pdf">[pdf]</a>
+                	<br><a href="https://www.each.usp.br/digiampietri/ACH2002/ConceitosBasicos.pdf">Equações e operações matemáticas</a> necessárias para algumas análises realizadas nesta disciplina.
+                </p>
+            </div>
+            <div class="content-item">
+                <p>[17/08/2023] Análise Assintótica de Algoritmos (parte II) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula04.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[29/08/2023] Indução Fraca e Forte <a href="https://www.each.usp.br/digiampietri/ACH2002/aula05.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[12/09/2023] Indução e Recursão <a href="https://www.each.usp.br/digiampietri/ACH2002/aula06.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula06.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[14/09/2023] Relações de Recorrência <a href="https://www.each.usp.br/digiampietri/ACH2002/aula07.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[19/09/2023] Resolvendo Equações de Recorrência <a href="https://www.each.usp.br/digiampietri/ACH2002/resolucaoEquacaoDeRecorrencia.pdf">[pdf]</a></p>
+                <a href="https://www.each.usp.br/digiampietri/ACH2002/ExerciciosResolucaoDeEquacoesDeRecorrencia.pdf">Exercícios</a>
+            </div>
+            <div class="content-item">
+                <p>[21/09/2023] Análise de Algoritmos Iterativos e Recursivos <a href="https://www.each.usp.br/digiampietri/ACH2002/aula09.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula09.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[26/09/2023] Divisão e Conquista <a href="https://www.each.usp.br/digiampietri/ACH2002/aula10.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula10.c">[c]</a>
+                Teorema Mestre <a href="http://www.each.usp.br/digiampietri/SIN5013/TeoremaMestre.pdf">[pdf]</a>
+                Teorema Mestre - exercícios (com resposta final)<a href="divisaoEConquista_exercicios.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[28/09/2023] Aula para fazer / corrigir exercícios</p>
+            </div>
+            <div class="content-item">
+                <p>[03/10/2023] Tentativa e Erro (Backtracking) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula11.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula11.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[05/10/2023] Tentativa e Erro (parte II) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula12.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula12.c">[c]</a>
+                <br>Programa Gráfico Passeio do Cavalo <a href="https://www.each.usp.br/digiampietri/ACH2002/PasseioDoCavalo.exe">[exe]</a>
+                Programa Gráfico Oito Rainhas <a href="https://www.each.usp.br/digiampietri/ACH2002/OitoRainhas.exe">[exe]</a>
+                
+                </p>
+            </div>
+            <div class="content-item">
+                <p>[10/10/2023] Revisão para a Prova</p>
+            </div>
+            <div class="content-item">
+                <p>[12/10/2023] Feriado de Nossa Senhora Aparecida (não haverá aulas)</p>
+            </div>
+            <div class="content-item">
+                <p>[17/10/2023] <font color="#0000"><b>Prova 1</b></font> (exemplo de <a href="https://www.each.usp.br/digiampietri/ACH2002/ExemploDeProva.pdf">prova</a>)</p>
+            </div>
+            <div class="content-item">
+                <p>[19/10/2023] Algoritmos Gulosos <a href="https://www.each.usp.br/digiampietri/ACH2002/aula13.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula13.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[24/10/2023] Algoritmos Gulosos (parte II) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula14a.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula14b.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula14a.c">[c]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula14b.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[26/10/2023] Ordenação por Inserção <a href="https://www.each.usp.br/digiampietri/ACH2002/aula15.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p><font color="#0000">Data máxima para a entrega do <a href="https://www.each.usp.br/digiampietri/ACH2002/ep1/">EP1</a>: 29/10/2023</font></p>
+            </div>
+            <div class="content-item">
+                <p>[31/10/2023] Ordenação por Seleção e Bolha <a href="https://www.each.usp.br/digiampietri/ACH2002/aula16.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula16.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[02/11/2023] Feriado de Finados (não haverá aulas)</p>
+            </div>
+            <div class="content-item">
+                <p>[07/11/2023] QuickSort <a href="https://www.each.usp.br/digiampietri/ACH2002/aula17.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula17.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[09/10/2023] MergeSort <a href="https://www.each.usp.br/digiampietri/ACH2002/aula18.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula18.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[14/11/2023] Heaps <a href="https://www.each.usp.br/digiampietri/ACH2002/aula19.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula19.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[16/11/2023] Heapsort <a href="https://www.each.usp.br/digiampietri/ACH2002/aula20.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula20.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[21/11/2023] Cota Inferior <a href="https://www.each.usp.br/digiampietri/ACH2002/aula21.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[23/11/2023] CountingSort e RadixSort <a href="https://www.each.usp.br/digiampietri/ACH2002/aula22.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula22.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[28/11/2023] Programação Dinâmica (parte I) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula23.pdf">[pdf]</a> <a href="https://www.each.usp.br/digiampietri/ACH2002/aula23.c">[c]</a></p>
+            </div>
+            <div class="content-item">
+                <p>[30/11/2023] Programação Dinâmica (parte II) <a href="https://www.each.usp.br/digiampietri/ACH2002/aula24.pdf">[pdf]</a></p>
+            </div>
+            <div class="content-item">
+                <p><font color="#0000">Data máxima para a entrega do EP2: 03/12/2023</font></p>
+            </div>
+            <div class="content-item">
+                <p>[05/12/2023] Revisão para a Prova</p>
+            </div>
+            <div class="content-item">
+                <p>[07/12/2023] <font color="#0000"><b>Prova 2</b></font></p>
+            </div>
+            <div class="content-item">
+                <p><font color="#0000">12/12 e 14/12 - Não teremos aula de ACH2002 nesta semana (a confirmar)</font></p>
+            </div>
+            <div class="content-item">
+                <p>[19/12/2023] <font color="#0000"><b>Prova Substitutiva</b></font></p>
+            </div>
+            <div class="content-item">
+                <p>[21/12/2023] Vistas às Provas (sala 110P do A1)</p>
+            </div>
+            <div class="content-item">
+                <p>[25/01/2024] <font color="#0000"><b>Prova de Recuperação</b> (data a confirmar)</font></p>
+            </div>
+        </div>
+        </div>
+        <div class="centraliza-botao">
+        <p class="texto-impressao">Imprimir Cronograma</p>
+        <button id="btnImprimir" onclick="imprimirCronograma()"><img class = "imagem_impressao"src="Imagens\impressora.png"></button>
+        </div>
+        <div id = "outros">
+        <div class ="divisao"></div>
+        <section class = "content-grid" id= "observacao"><div class ="content-item"><p><font color="#0000"><b>Nos sete dias anteriores às datas de entregas de EPs não serão esclarecidas dúvidas sobre os EPs. No dia de cada prova e no dia anterior a cada prova, não serão esclarecidas dúvidas sobre o conteúdo da matéria.</b></font></p></div></section>
+        <section id ="livros" class = "content-grid"><div class ="content-item"><h3>Livro texto principal:</h3></p>
+        <p>- CORMEN, T. H.; LEISERSON, C. E.; RIVEST, R. L.; STEIN, C. “Algoritmos - Teoria e Prática”, GEN LTC, 3ª edição, 2012.</p></div></section>
+        <section class = "content-grid" id ="atendimentos"><div class = "content-item"><h3>Atendimentos fora do horário de aula:</h3></p>
+        <p>A disciplina conta com um monitor, Felipe Akira Dias <a href="mailto:felipeakiradias@usp.br">(felipeakiradias@usp.br)</a>, que poderá esclarecer dúvidas por e-mail além de auxiliar no dojô.</p>
+        <section class = "content-grid" id= "plantao"><div class ="content-item"><font color="#0000"><h3>Plantão de dúvidas semanal:</h3><p>quintas-feiras (exceto nos feriados) das 17:00h às 18:00h (sala 110P do A1).</p><a href="http://uspdigital.usp.br/jupiterweb/obterDisciplina?sgldis=ACH2002&nomdis=">Site da disciplina no jupiterweb</a></div></div></section> 
+        <hr>
+        <section class = "content-grid" id= "extras"><div class ="content-item"><h3>Conteúdos Extras / Links interessantes</h3>
+        <p><a href="http://pythontutor.com/visualize.html#mode=edit">Python Tutor</a> - ferramenta para visualização (gráfica) do uso de memória durante a execução dos seus programas (em diferentes linguagens de programação, incluindo C, Java e Python)</p>
+        <a href="http://www.each.usp.br/digiampietri/ACH2001/Tutorial_ComoInstalarGCCNoWindows10.pdf">Tutorial para instalação do GCC no Windows</a>
+        <h3>Exemplos de compiladores online:</h3>
+        <a href="https://www.onlinegdb.com/online_c_compiler">OnlineGDB</a>
+        <a href="https://www.programiz.com/c-programming/online-compiler/">Programiz</a>
+        <a href="https://repl.it/languages/c">Replit</a></div></section> 
+        <hr>
+        <div class ="finale"></div>
+    </div>
+        <footer class="footer">
+            <!-- Logo no footer -->
+            <div class="footer-right">
+                <img src="Imagens\seu-logo.png" alt="Logo da EACH">
+            </div>
+        </footer>
+        <script src="impressao.js"></script>
+  </body></html>
+  
